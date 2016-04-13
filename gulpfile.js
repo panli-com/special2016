@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var day = '20160408',
+var day = '20160413',
     mincss = 'app.css',
     minjs = 'app.js';
 
