@@ -3,7 +3,7 @@ var gulp = require('gulp');
 
 var day = '20160415',
 
-    mincss = 'app.css',
+    mincss = '461.css',
     minjs = 'app.js';
     
     
@@ -56,7 +56,7 @@ gulp.task('scripts',function(){
         .pipe(concat(minjs))
         .pipe(gulp.dest('./'+ day +'/tmp/js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./'+ day +'/build/js/'))
+        .pipe(gulp.dest('./'+ day +'/build/css/js/'))
         .pipe(reload({stream: true}))
         .pipe(notify({ message: 'Scripts task complete' }));
 

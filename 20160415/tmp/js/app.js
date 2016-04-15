@@ -12,37 +12,9 @@ function floorNnav(){
 } 
 
 
-function isXie8(){
-	 var browser=navigator.appName 
-      var b_version=navigator.appVersion 
-      var version=b_version.split(";"); 
-      var trim_Version=version[1].replace(/[ ]/g,""); 
-      if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0") 
-      { 
-        return 8;
-      } 
-      else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0") 
-      { 
-      return 8; 
-      } 
-      else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0") 
-      { 
-      return 8;
-      } 
-      else if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0") 
-      { 
-      	return 8;
-      }else{
-		  return 100;
-	  }
-}
 ;(function(){
   
   
-   //touchstart:    
-   //touchmove:     
-   //touchend:    
-   //touchcancel:     
   
   $(function(){ 
 
@@ -68,7 +40,7 @@ function isXie8(){
                   closeBtn: false,
                   area: ['1000px', '319px'],
                   shadeClose: true,
-                  skin: 'layui-Pan-nobg', //没有背景色
+                  skin: 'layui-Pan-nobg', //没有背景色 
                   content: html
               });
      });  

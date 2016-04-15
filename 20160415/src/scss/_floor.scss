@@ -3,7 +3,7 @@
     padding-top: 28px;
     .floor-title{
         height: 58px;
-        background: url(../images/floor-title.png) no-repeat center center;
+        background: url(./images/floor-title.png) no-repeat center center;
     }
     .floor-box{
         position: relative;
@@ -36,6 +36,15 @@
                         line-height: 30px;
                         overflow: hidden;
                         white-space: normal;
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #555555;
+                        a{
+                            color: #555555;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
                     }
                     .price{
                         color: #fb483a;
@@ -57,13 +66,21 @@
                         height: 30px;
                         line-height: 30px;
                         color: #FFF;
-                        background:#fb483a url(../images/btn-go.png) no-repeat;
+                        background:#fb483a url(./images/btn-go.png) no-repeat;
                         background-position: 80px 10px;
+                        &:hover{
+                            background-color: #DE2314;
+                        }
+                        a{
+                            color: #FFF;
+                            display: block;
+                            line-height: 30px;
+                        }
                     }
                 }
                 a{
                     text-decoration: none;
-                    color: #555555;
+                    
                     font-size: 12px;
                 }
                 .thumb{

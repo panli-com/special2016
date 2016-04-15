@@ -1,10 +1,6 @@
 ;(function(){
   
   
-   //touchstart:    
-   //touchmove:     
-   //touchend:    
-   //touchcancel:     
   
   $(function(){ 
 
@@ -30,7 +26,7 @@
                   closeBtn: false,
                   area: ['1000px', '319px'],
                   shadeClose: true,
-                  skin: 'layui-Pan-nobg', //没有背景色
+                  skin: 'layui-Pan-nobg', //没有背景色 
                   content: html
               });
      });  

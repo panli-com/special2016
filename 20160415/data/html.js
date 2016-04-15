@@ -30,20 +30,21 @@ function FloorAll(data,imgHead,id){
             for(var i=0;i<data.length;i++){
                 var name = data[i].商品名称,
                     price = data[i].价格,                  
-                    imgUrl = './build/images/products/'+data[i].图片名称,
-                    proUrl = "http://www.panli.com/Crawler.aspx?purl="+data[i].链接;
+                    imgUrl = './build/css/images/products/'+data[i].图片名称,
+                    Url = "http://www.panli.com/Crawler.aspx?purl="+data[i].链接,
+                    proUrl = data[i].链接;
                     
                   str += ' <li class="lic">'+
-                      '       <a href="'+ proUrl +'" target="_blank" >'+
+                   
                           '       <div class="thumb">'+
-                           '          <img src="'+ imgUrl +'" alt="">'+
+                           '          <a href="'+ proUrl +'" target="_blank" ><img src="'+ imgUrl +'" alt=""></a>'+
                          '        </div>'+
                            '      <div class="pro-foot">'+
-                             '        <p>'+ name +'</p>'+
+                             '        <p><a href="'+ proUrl +'" target="_blank" >'+ name +'</a></p>'+
                               '       <span class="price"><i>¥</i>'+ price +'</span>'+
-                               '      <span class="btn-go">马上代购</span>'+
+                               '      <span class="btn-go"><a href="'+ Url +'" target="_blank" >马上代购</a></span>'+
                              '    </div>'+
-                            ' </a>'+
+                           
                        '  </li>';
                
 
