@@ -1,0 +1,86 @@
+.floor-nav-wrap{
+	position: fixed;
+	left: 10px;
+	margin-top: -201px;
+	top: 50%;
+	z-index: 9999;
+	width: 146px;
+	height: 448px;
+	background: url(../images/floor-nav.png) no-repeat center top;
+	display: none;
+	a{
+		text-decoration: none;
+		display: block;
+	}
+	.floor-nav-u{
+		padding-top: 14px;
+		li{
+			
+			display: block;
+			opacity: 0.5;
+			&.li1{	
+                a{
+                    height: 40px;
+                    
+                    
+			    }
+			}
+            &.li2{
+				a{
+                    height: 38px;
+                    
+                    
+			    }
+			}
+            &.li3{
+				a{
+                    height: 34px;
+                    
+                    
+			    }
+			}
+            &.li4{
+				a{
+                    height: 27px;
+                    
+                    
+			    }
+			}
+            &.li5{
+				a{
+                    height: 27px;
+                    
+                    
+			    }
+			}
+            &.li6{
+				a{
+                    height: 27px;
+                    
+                    
+			    }
+			}
+            &.li7{
+				a{
+                    height: 27px;
+                  
+                    
+			    }
+			}
+			
+		}
+	}
+	
+	.floor-nav-footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+		bottom: 10px;
+		a{
+			display: block;
+			height: 40px;
+			
+			opacity: 0.5;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var day = '20160408',
+var day = '20160415',
     mincss = 'app.css',
     minjs = 'app.js';
 
@@ -18,8 +18,6 @@ var sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     zip = require('gulp-zip');
-
-
 
 
 //编译Sass，Autoprefix及缩小化

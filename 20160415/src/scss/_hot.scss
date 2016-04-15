@@ -1,0 +1,29 @@
+.hot-shop-wrap{
+    padding-top: 38px;
+ 
+    .hot-title{
+        height: 47px;
+        background: url(../images/hot-title.png) no-repeat center center;
+    }
+    
+    
+    .hot-main{
+        padding-top: 18px;
+        padding-bottom: 32px;
+        ul{
+            width: 1100px;
+            clear: both;
+            overflow: hidden;
+            li{
+                float: left;
+                width: 325px;
+                height: 280px;
+                margin-right: 10px;
+                a,img{
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
