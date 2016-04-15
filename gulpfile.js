@@ -5,6 +5,11 @@ var day = '20160415',
 
     mincss = 'app.css',
     minjs = 'app.js';
+    
+    
+    
+    
+var hostUrl = 'http://img.panlidns.com/CMS/special/453/css/js/main.min.js';
 
 // 引入组件
 var sass = require('gulp-sass'),
