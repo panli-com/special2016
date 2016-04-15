@@ -5,7 +5,8 @@
   margin: 0 auto; }
 
 .app-main {
-  background: #555da8; }
+  background: #555da8;
+  padding-bottom: 50px; }
 
 .banner-sp {
   height: 935px;
@@ -141,8 +142,8 @@
         float: left;
         width: 240px;
         height: 340px;
-        margin-top: 8px;
-        margin-left: 8px; }
+        margin-top: 10px;
+        margin-left: 6px; }
         .floor-sp .floor-main ul li.lic {
           background: #FFF; }
           .floor-sp .floor-main ul li.lic .pro-foot {
