@@ -166,14 +166,13 @@
                 text-decoration: underline; }
           .floor-sp .floor-main ul li.lic .price {
             color: #fb483a;
-            font-size: 18px;
-            font-family: "Arial Regular";
+            font-size: 22px;
             position: relative;
             margin-top: 5px;
             float: left; }
-            .floor-sp .floor-main ul li.lic .price span {
-              padding-left: 5px;
-              font-size: 22px;
+            .floor-sp .floor-main ul li.lic .price i {
+              padding-right: 5px;
+              font-size: 18px;
               font-style: normal; }
           .floor-sp .floor-main ul li.lic .btn-go {
             float: right;
