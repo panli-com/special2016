@@ -18,7 +18,8 @@
     .banner-sp .banner-content a {
       position: absolute;
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
     .banner-sp .banner-content .regist-btn {
       width: 216px;
       height: 88px;
