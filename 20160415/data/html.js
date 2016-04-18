@@ -41,7 +41,7 @@ function FloorAll(data,imgHead,id){
                          '        </div>'+
                            '      <div class="pro-foot">'+
                              '        <p><a href="'+ proUrl +'" target="_blank" >'+ name +'</a></p>'+
-                              '       <span class="price">¥<span>'+ price +'</span></span>'+
+                              '       <span class="price">$<span>'+ price +'</span></span>'+
                                '      <span class="btn-go"><a href="'+ Url +'" target="_blank" >马上代购</a></span>'+
                              '    </div>'+
                            
