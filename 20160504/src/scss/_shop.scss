@@ -12,8 +12,12 @@
         height: 258px;
         img{
             display: inline-block;
+            transition: .3s;
             width: 325px;
             height: 258px;
+            &:hover{
+                transform:translate(0,3px);
+            }
         }
     }
 }

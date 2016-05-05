@@ -140,8 +140,12 @@
     height: 258px; }
     .recommend-shop li img {
       display: inline-block;
+      transition: .3s;
       width: 325px;
       height: 258px; }
+      .recommend-shop li img:hover {
+        -webkit-transform: translate(0, 3px);
+                transform: translate(0, 3px); }
 
 .footer-copy-p {
   text-align: right;
