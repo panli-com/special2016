@@ -122,7 +122,6 @@
 .floor-4 {
   position: relative;
   padding-top: 92px;
-  padding-bottom: 56px;
   text-align: center; }
   .floor-4 img {
     display: block;
@@ -143,3 +142,9 @@
       display: inline-block;
       width: 325px;
       height: 258px; }
+
+.footer-copy-p {
+  text-align: right;
+  color: #110f07;
+  font-size: 14px;
+  padding: 20px 0; }
