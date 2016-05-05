@@ -13,6 +13,9 @@
 .footer {
   margin-top: 0; }
 
+map area {
+  outline: none; }
+
 .banner-wrap-p {
   height: 600px;
   background: #fea7c3 url(./images/bannerA.png) no-repeat center center;
