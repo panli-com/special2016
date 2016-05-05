@@ -1,0 +1,22 @@
+.floor-4-wrap{
+    background: #fff url(./images/f2-bg.png);
+    min-height: 500px;
+}
+.floor-4-line-top{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 54px;
+    background: url(./images/f4-line-top.png) no-repeat center center;
+    background-size: cover;
+}
+.floor-4{
+    position: relative;
+    padding-top: 92px;
+    padding-bottom: 56px;
+    text-align: center;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}

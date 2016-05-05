@@ -1,0 +1,32 @@
+.floor-2-wrap{
+    background: #fff url(./images/f2-bg.png);
+    min-height: 500px;
+    position: relative;
+}
+.floor-2-line-top{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background: url(./images/f2-line-top.png) no-repeat center center;
+    background-size: cover;
+}
+.floor-2-line-bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 52px;
+    background: url(./images/f2-line-bottom.png) no-repeat center center;
+    background-size: cover;
+}
+.floor-2{
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 98px;
+    text-align: center;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}

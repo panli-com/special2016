@@ -1,0 +1,22 @@
+.floor-1-wrap{
+    background: #76e4ee url(./images/f1-bg.png) no-repeat center 256px;
+    min-height: 500px;
+}
+.floor-1{
+    position: relative;
+    padding-top: 133px;
+    padding-bottom: 56px;
+    text-align: center;
+    .panbi-box{
+        position: absolute;
+        height: 191px;
+        left: 0;
+        right: 0;
+        top: -98px;
+        background:  url(./images/panbi-box.png) no-repeat center center;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
