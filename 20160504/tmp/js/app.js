@@ -149,9 +149,7 @@ function floorNnavLeft(){
 	var winW = $(window).width(),       
 		mainOfL = $(".floor-1").offset().left;
 		var navW = $('.floor-nav-wrap').width();
-        console.log(winW)
-        console.log(mainOfL)
-        console.log(navW)
+
 		if(winW >= 1444){
 			 var oFright = mainOfL-navW-15;
                    
@@ -165,9 +163,7 @@ function floorNnav(){
 	var winW = $(window).width(),       
 		mainOfL = $(".floor-1").offset().left;
 		var navW = $('.floor-nav-wrap').width();
-        console.log(winW)
-        console.log(mainOfL)
-        console.log(navW)
+
 		if(winW >= 1444){
 			 var oFright = mainOfL-navW-15;       
 			 $('.floor-nav-wrap').css("right",oFright)
@@ -210,5 +206,56 @@ function floorNnav(){
         
     });
     
+    $("img").hover(
+        function () {
+            
+            alert("@2");
+        },
+        function () {
+            $(this).removeClass("hover");
+        }
+     );
+    
+    $("area").each(function(){
+            var $x=-70; 
+            var $y=-80;
+            var name=$(this).attr("alt");
+            
+            $(this).hover(
+        function () {
+            
+            alert("@2");
+        },
+        function () {
+            $(this).removeClass("hover");
+        }
+     );
+            
+            
+            // $(this).mouseover(function(e){
+            //     var index_num=$(this).index();
+            //     var dom="<div class='mapDiv'><p>伊而美提示您这是<span class='name'></span><span class='num'></span></p></div>";
+            //     $("body").append(dom);
+            //     $(".name").text(name);
+            //     $(".num").text(index_num)
+            //     $(".mapDiv").css({
+            //     top: (e.pageY + $y)+"px",
+            //     left: (e.pageX + $x)+"px"
+            //     }).show("fast");
+            // }).mouseout(function(){
+            // $(".mapDiv").remove();
+            // }).mousemove(function(e){
+            // $(".mapDiv").css({
+            // top: (e.pageY + $y)+"px",
+            // left: (e.pageX + $x)+"px"
+            // })
+            // });
+    });
+    
+    
+    
+    
     
 })();
+
+

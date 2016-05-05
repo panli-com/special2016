@@ -149,9 +149,7 @@ function floorNnavLeft(){
 	var winW = $(window).width(),       
 		mainOfL = $(".floor-1").offset().left;
 		var navW = $('.floor-nav-wrap').width();
-        console.log(winW)
-        console.log(mainOfL)
-        console.log(navW)
+
 		if(winW >= 1444){
 			 var oFright = mainOfL-navW-15;
                    
@@ -165,9 +163,7 @@ function floorNnav(){
 	var winW = $(window).width(),       
 		mainOfL = $(".floor-1").offset().left;
 		var navW = $('.floor-nav-wrap').width();
-        console.log(winW)
-        console.log(mainOfL)
-        console.log(navW)
+
 		if(winW >= 1444){
 			 var oFright = mainOfL-navW-15;       
 			 $('.floor-nav-wrap').css("right",oFright)
