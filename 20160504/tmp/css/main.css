@@ -1,6 +1,8 @@
 .frame {
   width: 100%;
   overflow: hidden; }
+  .frame a {
+    text-decoration: none; }
 
 .w1000 {
   width: 1000px; }
@@ -152,3 +154,21 @@
   color: #110f07;
   font-size: 14px;
   padding: 20px 0; }
+
+.floor-nav-wrap {
+  position: fixed;
+  left: 10px;
+  margin-top: -32px;
+  top: 50%;
+  z-index: 9999;
+  width: 100px;
+  height: 64px;
+  background: url(./images/top.png) no-repeat center top;
+  display: none;
+  cursor: pointer; }
+  .floor-nav-wrap a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    height: 64px; }

@@ -12,7 +12,26 @@
         
         $.plax.enable();
 
-       
+        floorNnav();
+        
+        $(".back-top").on("click",function(){              
+                 $('body,html').animate({ scrollTop: 0 }, 300);
+        }); 
+        
         
     });
+    
+    
+    $(window).resize(function(){
+        floorNnav();
+    })
+ 
+ 
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        $('.floor-nav-wrap')[scrollTop > 400 ? 'show' : 'hide']();
+        
+    });
+    
+    
 })();
