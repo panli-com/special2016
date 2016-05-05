@@ -193,7 +193,7 @@ function floorNnav(){
         
         $(".gotoShop").on("click",function(){
             var shp = $(".recommend-shop").offset().top;          
-                 $('body,html').animate({ scrollTop:shp }, 500);
+                 $('body,html').animate({ scrollTop:shp-260 }, 500);
         }); 
         
         
