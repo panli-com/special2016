@@ -191,6 +191,11 @@ function floorNnav(){
                  $('body,html').animate({ scrollTop: 0 }, 300);
         }); 
         
+        $(".gotoShop").on("click",function(){
+            var shp = $(".recommend-shop").offset().top;          
+                 $('body,html').animate({ scrollTop:shp }, 500);
+        }); 
+        
         
     });
     

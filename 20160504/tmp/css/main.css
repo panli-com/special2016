@@ -61,6 +61,13 @@
     right: 0;
     top: -98px;
     background: url(./images/panbi-box.png) no-repeat center center; }
+    .floor-1 .panbi-box .gotoShop {
+      position: absolute;
+      display: block;
+      width: 684px;
+      height: 36px;
+      left: 400px;
+      top: 10px; }
   .floor-1 img {
     position: relative;
     display: block;
