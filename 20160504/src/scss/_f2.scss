@@ -8,7 +8,7 @@
     left: 0;
     right: 0;
     height: 52px;
-    background: url(./images/f2-line-top.png) no-repeat center center;
+    background: url(./images/f2-line-top.png) no-repeat center top;
     background-size: cover;
 }
 .floor-2-line-bottom{
@@ -16,8 +16,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 52px;
-    background: url(./images/f2-line-bottom.png) no-repeat center center;
+    height: 51px;
+    background: url(./images/f2-line-bottom.png) no-repeat center bottom;
     background-size: cover;
 }
 .floor-2{
