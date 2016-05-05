@@ -15,7 +15,7 @@
 
 .banner-wrap-p {
   height: 600px;
-  background: #fea7c3 url(./images/banner-bg.png) no-repeat center center;
+  background: #fea7c3 url(./images/bannerA.png) no-repeat center center;
   position: relative; }
   .banner-wrap-p .banner-duobian {
     position: absolute;
@@ -36,7 +36,7 @@
     right: 0;
     top: 49px;
     height: 481px;
-    background: url(./images/banner-text.png) no-repeat center center; }
+    background: url(./images/banner-text2.png) no-repeat center center; }
   .banner-wrap-p .banner-girl {
     position: absolute;
     left: 0;
@@ -62,6 +62,7 @@
     top: -98px;
     background: url(./images/panbi-box.png) no-repeat center center; }
   .floor-1 img {
+    position: relative;
     display: block;
     margin: 0 auto; }
 
@@ -93,6 +94,7 @@
   padding-bottom: 98px;
   text-align: center; }
   .floor-2 img {
+    position: relative;
     display: block;
     margin: 0 auto; }
 
@@ -171,3 +173,11 @@
     cursor: pointer;
     width: 100px;
     height: 64px; }
+
+.mapDiv {
+  background: purple;
+  position: absolute;
+  text-align: center; }
+
+.areahover {
+  background: purple; }

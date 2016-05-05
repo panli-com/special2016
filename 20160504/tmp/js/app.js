@@ -206,56 +206,59 @@ function floorNnav(){
         
     });
     
-    $("img").hover(
-        function () {
-            
-            alert("@2");
-        },
-        function () {
-            $(this).removeClass("hover");
-        }
-     );
-    
-    $("area").each(function(){
-            var $x=-70; 
-            var $y=-80;
-            var name=$(this).attr("alt");
-            
-            $(this).hover(
-        function () {
-            
-            alert("@2");
-        },
-        function () {
-            $(this).removeClass("hover");
-        }
-     );
-            
-            
-            // $(this).mouseover(function(e){
-            //     var index_num=$(this).index();
-            //     var dom="<div class='mapDiv'><p>伊而美提示您这是<span class='name'></span><span class='num'></span></p></div>";
-            //     $("body").append(dom);
-            //     $(".name").text(name);
-            //     $(".num").text(index_num)
-            //     $(".mapDiv").css({
-            //     top: (e.pageY + $y)+"px",
-            //     left: (e.pageX + $x)+"px"
-            //     }).show("fast");
-            // }).mouseout(function(){
-            // $(".mapDiv").remove();
-            // }).mousemove(function(e){
-            // $(".mapDiv").css({
-            // top: (e.pageY + $y)+"px",
-            // left: (e.pageX + $x)+"px"
-            // })
-            // });
-    });
-    
-    
-    
-    
     
 })();
 
+$(document).ready(function () {  
+    
+ 
+
+});  
+
+
+function meeaM(){
+    
+            $("area").each(function () {  
+                var $x = -55;  
+                var $y = -80;
+                var x,y; 
+                var name = $(this).attr("alt");  
+                $(this).mouseover(function (e) { 
+                    var strall = [];  
+                    strall = $(this).attr("coords").split(",");  
+                     x = parseInt(strall[0]);  
+                     y = parseInt(strall[3]);  
+                    var index_num = $(this).index();  
+                    var dom = "<div class='mapDiv'>点击购买</div>";  
+                    $("body").append(dom);  
+                  
+                    $(".mapDiv").css({  
+                        left: (x + $x) + "px",  
+                        top: (y + $y) + "px"  
+  
+                    }).show();  
+                }).mouseout(function () {  
+                    $(".mapDiv").remove();  
+                }).mousemove(function (e) {  
+                    $(".mapDiv").css({  
+                        left: (x + $x) + "px",  
+                        top: (y + $y) + "px"  
+                    })  
+                });  
+            });  
+            //first load  
+            show();  
+            //random  
+            setInterval(show, 3000); // 注意函数名没有引号和括弧   
+    
+}
+  
+function show() {  
+    var area = $("area");  
+    var random = getRandom(area.length);  
+    $(area[random]).trigger("mouseover");  
+}  
+
+function getRandom(n) { return Math.floor(Math.random() * n + 1) }  
+        
 
