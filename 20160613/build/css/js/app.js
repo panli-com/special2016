@@ -1,0 +1,1 @@
+function LayerSpe(n){var n=n||"#Lay-main-1",e=PD(n).html();PL.open({type:1,title:!1,closeBtn:!1,area:"999px",skin:"layui-Pan-nobg",shadeClose:!0,content:e}),PD(".l-close").on("click",function(){PL.closeAll()})}PD(function(){});

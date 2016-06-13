@@ -1,9 +1,9 @@
 var gulp = require('gulp');
 
 
-var day = '20160504',
+var day = '20160613',
 
-    mincss = '464.css',
+    mincss = '468.css',
     minjs = 'app.js';
     
     
@@ -112,7 +112,7 @@ gulp.task('zip', function () {
 
 
 // 静态服务器 + 监听 scss/html 文件
-gulp.task('dev', ['sass'], function() {
+gulp.task('dev', ['sass','scripts'], function() {
 
     browserSync.init({
         server: './'+day+'/'

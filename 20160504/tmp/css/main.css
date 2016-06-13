@@ -158,8 +158,7 @@ map area {
       width: 325px;
       height: 258px; }
       .recommend-shop li img:hover {
-        -webkit-transform: translate(0, 3px);
-                transform: translate(0, 3px); }
+        transform: translate(0, 3px); }
 
 .footer-copy-p {
   text-align: right;
