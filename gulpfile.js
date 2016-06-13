@@ -1,9 +1,9 @@
 var gulp = require('gulp');
 
 
-var day = '20160613',
+var day = '20160613h5',
 
-    mincss = '468.css',
+    mincss = '469.css',
     minjs = 'app.js';
     
     
@@ -24,6 +24,7 @@ var sass = require('gulp-sass'),
     reload      = browserSync.reload,
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
+    px2rem   =    require('gulp-px3rem');
     zip = require('gulp-zip');
 
 
@@ -33,6 +34,7 @@ gulp.task('sass', function() {
         .pipe(sass({ style: 'expanded' }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest('./'+ day +'/tmp/css'))
+        .pipe(px2rem({remUnit: 72}))
         .pipe(rename(mincss))
         .pipe(minifycss())
         .pipe(gulp.dest('./'+ day +'/build/css/'))

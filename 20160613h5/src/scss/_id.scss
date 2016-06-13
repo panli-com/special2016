@@ -1,0 +1,48 @@
+
+.app{
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+.banner{
+	width: 720px;
+	height: 666px;
+	background: #ffb71e url(./images/banner.png) no-repeat center center;
+	background-size: contain;
+}
+
+.main{
+	background: #ffb71e;
+	min-height: 700px;
+	padding-top: 52px;
+	padding-bottom: 40px;
+	.title{
+		height: 47px;
+		background: url(./images/title.png) no-repeat center center;
+		background-size: contain;
+		margin-bottom: 32px;
+	}
+}
+
+
+.floor{
+	width: 660px;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 40px;
+}
+
+.floor1{
+	height: 304px;
+	background-image: url(./images/z1.png);
+}
+.floor2{
+	height: 304px;
+	background-image: url(./images/z2.png);
+
+}
+.floor3{
+	height: 217px;
+	background-image: url(./images/z3.png);
+}
