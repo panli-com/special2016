@@ -1,0 +1,71 @@
+.floor-sp {
+    background: #019fe8;
+    padding-top: 40px;
+}
+
+.floor-c {
+    .title {
+        background: #0c58ad;
+        text-align: center;
+        padding: 14px;
+    }
+}
+
+.floor-content {
+    padding: 17px 0;
+    ul {
+        width: 1017px;
+        clear: both;
+        overflow: hidden;
+    }
+    li {
+        width: 245px;
+        margin-right: 7px;
+        margin-bottom: 9px;
+        float: left;
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .thumb {
+        width: 245px;
+        height: 260px;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        img {
+            transition: .3s;
+            display: block;
+            max-width: 100%;
+        }
+    }
+    .contents {
+        position: relative;
+        padding: 14px;
+        background: #FFF;
+        p {
+            font-size: 12px;
+            color: #333;
+            padding-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .price {
+            font-size: 30px;
+            color: #fe3c0f;
+            font-weight: 400;
+        }
+        .buy-btn {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            text-decoration: none;
+            width: 90px;
+            height: 34px;
+            background: url(./imgs/buy.png) no-repeat center center;
+        }
+    }
+}
