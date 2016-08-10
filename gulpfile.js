@@ -3,7 +3,7 @@ var gulp = require('gulp');
 
 var day = '20160810',
 
-    mincss = 'app.css',
+    mincss = '475.css',
     minjs = 'app.js';
 
 
