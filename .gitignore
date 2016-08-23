@@ -15,5 +15,6 @@ static
 .module-cache
 *.log*
 
+.tmp
 
 npm-debug.log
