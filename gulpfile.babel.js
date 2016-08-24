@@ -1,7 +1,7 @@
 
 
 const day = '20160824';
-const ID = '476';
+const ID = '477';
 const mincss = `${ID}.css`, minjs   = 'app.js', BuildPath = './build/';
 const HostPath = `http://img.panlidns.com/CMS/special/${ID}/`;
 
