@@ -1,0 +1,39 @@
+.floor-nav {
+    position: fixed;
+    left: 10px;
+    margin-top: -201px;
+    top: 50%;
+    z-index: 9999;
+    width: 150px;
+    height: 200px;
+    background: url(./imgs/floor-nav.png) no-repeat center top;
+    display: none;
+    a {
+        text-decoration: none;
+        display: block;
+    }
+    .floor-nav-u {
+        padding-top: 28px;
+        li {
+            display: block;
+            opacity: 0.5;
+            width: 160px;
+            height: 40px;
+            background-color: transparent;
+            margin-bottom: 2px;
+            opacity: 0;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+    .back-top {
+        cursor: pointer;
+        display: block;
+        width: 160px;
+        height: 50px;
+        background-color: transparent;
+    }
+}

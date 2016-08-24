@@ -1,7 +1,7 @@
 
 
-const day = '20160810';
-const ID = '475';
+const day = '20160824';
+const ID = '476';
 const mincss = `${ID}.css`, minjs   = 'app.js', BuildPath = './build/';
 const HostPath = `http://img.panlidns.com/CMS/special/${ID}/`;
 
@@ -18,6 +18,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import ejs          from "gulp-ejs";
 import header       from 'gulp-header';
 import replace      from 'gulp-replace';
+import imagemin     from 'gulp-imagemin';
 
 
 
@@ -42,7 +43,7 @@ gulp.task('ejs', () => gulp.src(`./${day}/templates/index.ejs`)
     .pipe(ejs({
         title: pkg.description,
         mincss: mincss,
-        path:HostPath,
+        path:BuildPath,
         time: new Date().getTime()
     }))
     .pipe(gulp.dest(`./${day}/.tmp`))
@@ -82,6 +83,11 @@ gulp.task('scripts',() => gulp.src(`./${day}/src/js/*.js`)
     .pipe(gulp.dest(`./${day}/build/css/js/`))
     .pipe(reload({stream: true}))
     .pipe(notify({ message: 'Scripts task complete' })));
+
+gulp.task('images',() => gulp.src(`./${day}/src/imgs/*`)
+    .pipe(imagemin())
+    .pipe(gulp.dest(`./${day}/build/css/imgs`))
+    .pipe(notify({ message: 'imgs task complete' })));
 
 gulp.task('html',() => {
     gulp.src(`./${day}/*.html`)
@@ -129,6 +135,7 @@ gulp.task('dev', ['sass'], () => {
     gulp.watch([`./${day}/templates/*.html`, `./${day}/templates/*.ejs` ,`./${day}/templates/module/*.ejs`,`./${day}/templates/html/*.html`], ['ejs','host']);
 
 });
+
 
 
 gulp.task('default', ['dev','sass','ejs']);

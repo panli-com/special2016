@@ -1,0 +1,78 @@
+<!-- frame -->
+<div class="frame ">
+    <script src="<%= path %>css/js/app.js "></script>
+    <div class="floor-nav ">
+        <ul class="floor-nav-u ">
+            <li floor="1">&nbsp;
+            </li>
+            <li floor="2">&nbsp;
+            </li>
+            <li floor="3">&nbsp;
+            </li>
+        </ul>
+        <div class="back-top ">&nbsp;</div>
+    </div>
+    <div class="page-sp ">
+        <div class="banner-sp ">
+            <div class="w1 m-auto">
+                <a href="javascript:void(0);" data-el="readme-sp" class="gotofloor" >&nbsp;</a>
+            </div>
+        </div>
+        <div class="index-sp w1 m-auto">
+            <img src="<%= path %>css/imgs/index.png" alt="">
+            <a href="https://shop34345292.taobao.com/" target="_blank" class="i1">&nbsp;</a>
+            <a href="https://nanariji.world.tmall.com/" target="_blank" class="i2">&nbsp;</a>
+            <a href="https://dangdang.tmall.com/" target="_blank" class="i3">&nbsp;</a>
+        </div>
+        <div class="floor-sp w1 m-auto ">
+            <div class="floor-c floor1 " id="floor-1">
+                <div class="title ">
+                    <a href="https://shop34345292.taobao.com/" target="_blank">
+                       <img src="<%= path %>css/imgs/t1.png " alt=" ">
+                     </a>
+                </div>
+                <div class="floor-content ">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor-c floor2 " id="floor-2">
+                <div class="title ">
+                    <a href="https://nanariji.world.tmall.com/" target="_blank">
+                       <img src="<%= path %>css/imgs/t2.png " alt=" ">
+                     </a>
+                </div>
+                <div class="floor-content ">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor-c floor2 " id="floor-3">
+                <div class="title ">
+                    <a href="https://dangdang.tmall.com/" target="_blank">
+                       <img src="<%= path %>css/imgs/t3.png " alt=" ">
+                     </a>
+                </div>
+                <div class="floor-content ">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="readme-sp w1 m-auto" id="readme-sp">
+            <img src="<%= path %>css/imgs/readme.png" alt="">
+            <a href="https://shop34345292.taobao.com/" target="_blank" class="i1">&nbsp;</a>
+            <a href="https://nanariji.world.tmall.com/" target="_blank" class="i2">&nbsp;</a>
+            <a href="https://dangdang.tmall.com/" target="_blank" class="i3">&nbsp;</a>
+            <a href="https://dangdang.tmall.com/" target="_blank" class="i4">&nbsp;</a>
+        </div>
+    </div>
+</div>
+ <!-- frame end-->
+<script src="./data/data.js "></script>
+<script src="./data/html.js "></script>
+<script>
+    $(function() {
+        FloorList(productData)
+    })
+</script>
