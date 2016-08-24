@@ -82,6 +82,8 @@
 
 .index-sp{
     position: relative;
+    height: 433px;
+    background: url(./imgs/index.png) no-repeat center left;
     a{
         position: absolute;
         display: block;
@@ -108,6 +110,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
+    height: 454px;
+    background: url(./imgs/readme.png) no-repeat center left;
     a{
         display: block;
         text-decoration: none;
