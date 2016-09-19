@@ -1,11 +1,12 @@
 
 
-const day = '20160824';
-const ID = '477';
-const mincss = `${ID}.css`, minjs   = 'app.js', BuildPath = './build/';
-const HostPath = `http://img.panlidns.com/CMS/special/${ID}/`;
+// const day = '0919';
+// const ID = '478';
+// const mincss = `${ID}.css`, minjs   = 'app.js', BuildPath = './build/';
+// const HostPath = `http://img.panlidns.com/CMS/special/${ID}/`;
 
 import pkg          from './package.json';
+import conf         from './config.json';
 import gulp         from 'gulp';
 import sass         from 'gulp-sass';
 import minifycss    from 'gulp-minify-css';
@@ -19,8 +20,26 @@ import ejs          from "gulp-ejs";
 import header       from 'gulp-header';
 import replace      from 'gulp-replace';
 import imagemin     from 'gulp-imagemin';
+import px2rem       from 'gulp-pxrem';
 
 
+
+const day           = conf.start;
+const title         = conf[day].title;
+const ID            = conf[day].id;
+const description   = conf[day].description;
+const keywords      = conf[day].keywords;
+const author        = conf[day].author;
+const version       = conf[day].version;
+const mincss        = conf[day].build.css;
+const minjs         = conf[day].build.js;
+const BuildPath     = './build/';
+
+const HostPath = `http://img.panlidns.com/CMS/special/${ID}/`;
+
+
+let cssLoadSrc = conf[day].load.css;
+let jsLoadSrc  = conf[day].load.js;
 
 
 const browserSync = require('browser-sync').create();
@@ -29,42 +48,53 @@ const reload      = browserSync.reload;
 
 
 const banner = [
-    '/*! ',
-    '<%= pkg.description %> ',
-    'v<%= pkg.version %> | ',
-    `(c) ${new Date()} <%= pkg.homepage %> |`,
-    ' <%= pkg.author %>',
-    ' */',
-    '\n'
+  '/*! ',
+    `${title} `,
+    `v ${version}  | `,
+    `(c) ${new Date()}  ${author}  |`,
+    ' <%= pkg.homepage %> ',
+    ` ${ID}`,
+  ' */',
+  '\n'
 ].join('');
 
 
-gulp.task('ejs', () => gulp.src(`./${day}/templates/index.ejs`)
+gulp.task('ejs', () => gulp.src(`./${day}/src/templates/index.ejs`)
     .pipe(ejs({
-        title: pkg.description,
+        title: title,
         mincss: mincss,
         path:BuildPath,
+        version:version,
         time: new Date().getTime()
     }))
     .pipe(gulp.dest(`./${day}/.tmp`))
     .pipe(rename('index.html'))
     .pipe(gulp.dest(`./${day}/`))
-    .pipe(reload({ stream: true }))
-    .pipe(notify({ message: 'ejs task complete' })))
+    .pipe(notify({ message: 'ejs task complete' }))
+    .pipe(reload({ stream: true })))
 
 
-gulp.task('host', () => gulp.src(`./${day}/templates/html/html.html`)
+gulp.task('host', () => gulp.src(`./${day}/src/templates/html/html.html`)
     .pipe(replace('./build/', HostPath))
     .pipe(gulp.dest(`./${day}/.tmp`))
     .pipe(rename('host.html'))
     .pipe(gulp.dest(`./${day}/`))
-    .pipe(reload({ stream: true }))
     .pipe(notify({ message: 'host html task complete' })))
 
 //编译Sass，Autoprefix及缩小化
-gulp.task('sass', () => gulp.src(`./${day}/src/scss/main.scss`)
+gulp.task('sass', () => gulp.src(cssLoadSrc)
     .pipe(sass({ style: 'expanded' }))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    .pipe(autoprefixer({
+        browsers: ['> 1%','Firefox <= 20',''],
+        cascade: false
+    }))
+    .pipe(px2rem({
+        baseDpr: 2, // base device pixel ratio (default: 2)
+        threeVersion: false, // whether to generate @1x, @2x and @3x version (default: false)
+        remVersion: true, // whether to generate rem version (default: true)
+        remUnit: 72, // rem unit value (default: 75)
+        remPrecision: 6
+    }))
     .pipe(gulp.dest(`./${day}/.tmp/css`))
     .pipe(rename(mincss))
     .pipe(minifycss())
@@ -74,7 +104,7 @@ gulp.task('sass', () => gulp.src(`./${day}/src/scss/main.scss`)
     .pipe(notify({ message: 'Styles  task complete' })));
 
 
-gulp.task('scripts',() => gulp.src(`./${day}/src/js/*.js`)
+gulp.task('scripts',() => gulp.src(jsLoadSrc)
     .pipe(concat('main.js'))
     .pipe(gulp.dest(`./${day}/.tmp/js`))
     .pipe(rename(minjs))
@@ -132,7 +162,7 @@ gulp.task('dev', ['sass'], () => {
     gulp.watch(`./${day}/*.html`).on('change', reload);
     gulp.watch('./*.html').on('change', reload);
 
-    gulp.watch([`./${day}/templates/*.html`, `./${day}/templates/*.ejs` ,`./${day}/templates/module/*.ejs`,`./${day}/templates/html/*.html`], ['ejs','host']);
+    gulp.watch([`./${day}/src/templates/*.html`, `./${day}/src/templates/*.ejs` ,`./${day}/src/templates/module/*.ejs`,`./${day}/src/templates/html/*.html`], ['ejs','host']);
 
 });
 
