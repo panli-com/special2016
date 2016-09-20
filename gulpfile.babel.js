@@ -21,6 +21,7 @@ import header       from 'gulp-header';
 import replace      from 'gulp-replace';
 import imagemin     from 'gulp-imagemin';
 import px2rem       from 'gulp-pxrem';
+import plumber      from 'gulp-plumber';
 
 
 
@@ -62,6 +63,8 @@ const banner = [
 gulp.task('ejs', () => gulp.src(`./${day}/src/templates/index.ejs`)
     .pipe(ejs({
         title: title,
+        description: description,
+        keywords: keywords,
         mincss: mincss,
         path:BuildPath,
         version:version,
@@ -83,6 +86,7 @@ gulp.task('host', () => gulp.src(`./${day}/src/templates/html/html.html`)
 
 //编译Sass，Autoprefix及缩小化
 gulp.task('sass', () => gulp.src(cssLoadSrc)
+    .pipe(plumber())
     .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer({
         browsers: ['> 1%','Firefox <= 20',''],
