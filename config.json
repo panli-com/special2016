@@ -1,5 +1,21 @@
 {   
-    "start":"0919",
+    "start":"0928",
+    "0928": {
+        "id":"478",
+        "title": "双十 -Panli代购",
+        "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+        "description":"双十！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+        "version":"0.0.3",
+        "author":"Julian",
+        "load": {
+            "css": ["./0928/src/scss/main.scss"],
+            "js": ["./0928/src/js/*.js"]
+        },
+        "build":{
+            "css":"478.css",
+            "js":"app.js"
+        }
+    },
     "0919": {
         "id":"476",
         "title": "开拼有礼 -Panli代购",

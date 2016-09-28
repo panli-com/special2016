@@ -1,0 +1,97 @@
+.banner-sp {
+    height: 750px-38px;
+    min-width: 1000px;
+    background: url(./imgs/banner.png) no-repeat center top;
+    div {
+        height: 750px-38px;
+        position: relative;
+    }
+    a {
+        display: block;
+        position: absolute;
+        background: transparent;
+        opacity: .3;
+    }
+    .gotofloor {
+        height: 69px;
+        top: 436px;
+        left: 584px;
+        width: 150px;
+    }
+    .goto-register {
+        height: 69px;
+        top: 585px;
+        left: 522px;
+        width: 150px
+    }
+}
+
+.layui-Pan-nobg {
+    background-color: transparent;
+}
+
+.layer-html-1-main {
+    width: 1000px;
+    height: 319px;
+    position: relative;
+    .close-layer {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        opacity: 0;
+        right: 11px;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    .online-url-sp {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 30px;
+        bottom: 46px;
+        left: 224px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.layer-html-2-main {
+    width: 1000px;
+    height: 442px;
+    position: relative;
+    .close-layer {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        opacity: 0;
+        right: 21px;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    .online-url-sp {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 30px;
+        bottom: 187px;
+        left: 221px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .my-panpi-url-sp {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 30px;
+        bottom: 238px;
+        left: 793px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

@@ -86,19 +86,20 @@ gulp.task('host', () => gulp.src(`./${day}/src/templates/html/html.html`)
 
 //编译Sass，Autoprefix及缩小化
 gulp.task('sass', () => gulp.src(cssLoadSrc)
-    .pipe(plumber())
-    .pipe(sass({ style: 'expanded' }))
+    // .pipe(plumber())
+    // .pipe(sass({ style: 'expanded' }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['> 1%','Firefox <= 20',''],
         cascade: false
     }))
-    .pipe(px2rem({
-        baseDpr: 2, // base device pixel ratio (default: 2)
-        threeVersion: false, // whether to generate @1x, @2x and @3x version (default: false)
-        remVersion: true, // whether to generate rem version (default: true)
-        remUnit: 72, // rem unit value (default: 75)
-        remPrecision: 6
-    }))
+    // .pipe(px2rem({
+    //     baseDpr: 2, // base device pixel ratio (default: 2)
+    //     threeVersion: false, // whether to generate @1x, @2x and @3x version (default: false)
+    //     remVersion: true, // whether to generate rem version (default: true)
+    //     remUnit: 72, // rem unit value (default: 75)
+    //     remPrecision: 6
+    // }))
     .pipe(gulp.dest(`./${day}/.tmp/css`))
     .pipe(rename(mincss))
     .pipe(minifycss())

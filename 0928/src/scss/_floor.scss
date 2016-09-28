@@ -1,0 +1,271 @@
+.index-sp-wrap{
+    width: 100%;
+    min-width: 100px;
+    overflow: hidden;
+}
+.index-sp {
+    position: relative;
+    height: 288px;
+    // background: rgba(241, 213, 213, 0.14);
+    .banner-bottom {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 38px;
+        background: url(./imgs/banner-bottom.png) no-repeat 76px top;
+        z-index: 10;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.sp-index-nav {
+    position: relative;
+    z-index: 1;
+    height: 288px;
+    .sp-index-nav-child {
+        position: absolute;
+        width: 190px;
+        height: 280px;
+        background: url(./imgs/line.png) no-repeat 80px top;
+        cursor: pointer;
+        &.on{
+            padding-top: 89px;
+        }
+    }
+    .sp-cloud-small {
+        width: 189px;
+        height: 121px;
+        position: relative;
+        background: url(./imgs/cloud-small.png) no-repeat center center;
+        background-size: cover;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        img {
+            vertical-align: middle;
+        }
+    }
+    .sp-index-nav-child-1 {
+        left: 0;
+        // padding-top: 89px;
+        padding-top: 62px;
+    }
+    .sp-index-nav-child-2 {
+        left: 264px;
+        padding-top: 62px;
+    }
+    .sp-index-nav-child-3 {
+        left: 536px;
+        padding-top: 62px;
+    }
+    .sp-index-nav-child-4 {
+        right: 0;
+        padding-top: 62px;
+    }
+}
+
+.floor-sp {
+    padding-top: 10px;
+}
+
+.floor-c {
+    padding-bottom: 42px;
+    .title {
+        margin-bottom: 41px;
+    }
+     a{
+        text-decoration: none;
+    }
+}
+
+.floor-1 {
+    .title {
+        height: 38px;
+        background: url(./imgs/title-1.png) no-repeat center top;
+    }
+    .floor-content {
+        height: 471px;
+        background: url(./imgs/showcase.png) no-repeat center top;
+    }
+    .shop-line-u {
+        padding-top: 119px;
+        padding-left: 64px;
+        li {
+            margin-left: 16px;
+        }
+    }
+}
+
+.floor-2 {
+    .title {
+        height: 42px;
+        background: url(./imgs/title--2.png) no-repeat center center;
+    }
+    .floor-content {
+        clear: both;
+        overflow: hidden;
+    }
+    .floor-content-small {
+        width: 500px;
+        height: 430px;
+        float: left;
+        background: url(./imgs/showcase-small.png) no-repeat center top;
+    }
+    .shop-line-u {
+        padding-top: 119px;
+        padding-left: 64px;
+        li {
+            margin-left: 16px;
+        }
+    }
+}
+
+.floor-3 {
+    // background: url(./imgs/title--3-bg.png) no-repeat center 40px;
+    .title {
+        height: 39px;
+        background: url(./imgs/title--3.png) no-repeat center center;
+    }
+    .floor-content {
+        height: 471px;
+        background: url(./imgs/showcase.png) no-repeat center top;
+    }
+    .shop-line-u {
+        padding-top: 119px;
+        // padding-left: 64px; 
+        text-align: center;
+        li {
+            display: inline-block;
+            float: none;
+            margin:0 30px;
+        }
+    }
+}
+
+.floor-4 {
+    .title {
+        height: 38px;
+        background: url(./imgs/title-4.png) no-repeat center center;
+    }
+    .floor-content {
+        position: relative;
+        height: 181px;
+        background: url(./imgs/floor-4.png) no-repeat center top;
+    }
+    .sp-online-a{
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        background: transparent;  
+        opacity: .3;
+        left: 310px;
+        top: 116px; 
+    }
+}
+
+.shop-line-u {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    li {
+        float: left;
+        width: 197px;
+        height: 297px;
+        background: url(./imgs/shop-line.png) no-repeat center top;
+        background-size: cover;
+        padding: 1px;
+        overflow: hidden;
+    }
+    &.shop-line-u-sm {
+        li {
+            width: 167px-2px;
+            height: 261px-2px;
+            background: url(./imgs/shop-line-small.png) no-repeat center top;
+        }
+        .shop-main{
+            width: 167px-2px;
+            height: 261px-2px;
+        }
+    }
+    .shop-main {
+        position: relative;
+        width: 197px;
+        height: 297px;
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 52px;
+        }
+    }
+    .shop-yhd {
+        background: url(./imgs/shop/1hd.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/yhd.png) no-repeat center bottom;
+        }
+    }
+    .shop-dd {
+        background: url(./imgs/shop/dd.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/dang.png) no-repeat center bottom;
+        }
+    }
+    .shop-jd {
+        background: url(./imgs/shop/jd.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/jd.png) no-repeat center bottom;
+        }
+    }
+    .shop-mgj {
+        background: url(./imgs/shop/mgj.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/mogujie.png) no-repeat center bottom;
+        }
+    }
+    .shop-mls {
+        background: url(./imgs/shop/mls.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/meilishuo.png) no-repeat center bottom;
+        }
+    }
+    .shop-ssqy {
+        background: url(./imgs/shop/ssqy.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/qiyi.png) no-repeat center bottom;
+        }
+    }
+    .shop-tb {
+        background: url(./imgs/shop/tb.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/taobao.png) no-repeat center bottom;
+        }
+    }
+    .shop-tm {
+        background: url(./imgs/shop/tm.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/tmall.png) no-repeat center bottom;
+        }
+    }
+    .shop-tmcs {
+        background: url(./imgs/shop/tmcs.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/tmall-mall.png) no-repeat center bottom;
+        }
+    }
+    .shop-yh {
+        background: url(./imgs/shop/yh.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/youhuo.png) no-repeat center bottom;
+        }
+    }
+    .shop-ymx {
+        background: url(./imgs/shop/ymx.jpg) no-repeat center top;
+        span {
+            background: url(./imgs/amazon.png) no-repeat center bottom;
+        }
+    }
+}
