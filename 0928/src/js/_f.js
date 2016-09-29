@@ -67,21 +67,20 @@ function indexNavAnmi() {
 
 function indexNavAnmiOn() {
     var obj = indexNavNodeInfo;
-    console.log(PanLiNodeInfo);
+    
     var getDt = new Date(PanLiNodeInfo.time);
     var year = getDt.getFullYear();
     var month = getDt.getMonth() + 1;
     var date = getDt.getDate();
     var gst = year + '-' + month + '-' + date;
-    console.log(gst);
+  
     if (obj[gst]) {
         var ele = obj[gst];
-        console.log("you");
-        console.log(ele);
+       
         $(".sp-index-nav-child-" + ele).animate({paddingTop: [89, 'easeOutBack']}, 200);
         $(".sp-index-nav-child-" + ele).find(".sp-cloud-small").addClass("onl-buzz");
     } else {
-        console.log("wu");
+        // console.log("wu");
     }
 }
 

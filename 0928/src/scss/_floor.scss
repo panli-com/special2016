@@ -12,8 +12,8 @@
         left: 0;
         right: 0;
         top: 0;
-        height: 38px;
-        background: url(./imgs/banner-bottom.png) no-repeat 76px top;
+        height: 37px;
+        background: url(./imgs/banner-bottom-new.png) no-repeat 82px top;
         z-index: 10;
     }
     a{
@@ -194,6 +194,10 @@
         position: relative;
         width: 197px;
         height: 297px;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+        }
         span {
             position: absolute;
             bottom: 0;
@@ -203,67 +207,67 @@
         }
     }
     .shop-yhd {
-        background: url(./imgs/shop/1hd.jpg) no-repeat center top;
+        // background: url(./imgs/shop/1hd.jpg) no-repeat center top;
         span {
             background: url(./imgs/yhd.png) no-repeat center bottom;
         }
     }
     .shop-dd {
-        background: url(./imgs/shop/dd.jpg) no-repeat center top;
+        // background: url(./imgs/shop/dd.jpg) no-repeat center top;
         span {
             background: url(./imgs/dang.png) no-repeat center bottom;
         }
     }
     .shop-jd {
-        background: url(./imgs/shop/jd.jpg) no-repeat center top;
+        // background: url(./imgs/shop/jd.jpg) no-repeat center top;
         span {
             background: url(./imgs/jd.png) no-repeat center bottom;
         }
     }
     .shop-mgj {
-        background: url(./imgs/shop/mgj.jpg) no-repeat center top;
+        // background: url(./imgs/shop/mgj.jpg) no-repeat center top;
         span {
             background: url(./imgs/mogujie.png) no-repeat center bottom;
         }
     }
     .shop-mls {
-        background: url(./imgs/shop/mls.jpg) no-repeat center top;
+        // background: url(./imgs/shop/mls.jpg) no-repeat center top;
         span {
             background: url(./imgs/meilishuo.png) no-repeat center bottom;
         }
     }
     .shop-ssqy {
-        background: url(./imgs/shop/ssqy.jpg) no-repeat center top;
+        // background: url(./imgs/shop/ssqy.jpg) no-repeat center top;
         span {
             background: url(./imgs/qiyi.png) no-repeat center bottom;
         }
     }
     .shop-tb {
-        background: url(./imgs/shop/tb.jpg) no-repeat center top;
+        // background: url(./imgs/shop/tb.jpg) no-repeat center top;
         span {
             background: url(./imgs/taobao.png) no-repeat center bottom;
         }
     }
     .shop-tm {
-        background: url(./imgs/shop/tm.jpg) no-repeat center top;
+        // background: url(./imgs/shop/tm.jpg) no-repeat center top;
         span {
             background: url(./imgs/tmall.png) no-repeat center bottom;
         }
     }
     .shop-tmcs {
-        background: url(./imgs/shop/tmcs.jpg) no-repeat center top;
+        // background: url(./imgs/shop/tmcs.jpg) no-repeat center top;
         span {
             background: url(./imgs/tmall-mall.png) no-repeat center bottom;
         }
     }
     .shop-yh {
-        background: url(./imgs/shop/yh.jpg) no-repeat center top;
+        // background: url(./imgs/shop/yh.jpg) no-repeat center top;
         span {
             background: url(./imgs/youhuo.png) no-repeat center bottom;
         }
     }
     .shop-ymx {
-        background: url(./imgs/shop/ymx.jpg) no-repeat center top;
+        // background: url(./imgs/shop/ymx.jpg) no-repeat center top;
         span {
             background: url(./imgs/amazon.png) no-repeat center bottom;
         }
