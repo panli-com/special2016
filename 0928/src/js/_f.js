@@ -68,7 +68,7 @@ function indexNavAnmi() {
 function indexNavAnmiOn() {
     var obj = indexNavNodeInfo;
     
-    var getDt = new Date(PanLiNodeInfo.time);
+    var getDt = new Date(Number(PanLiNodeInfo.time)*1000);
     var year = getDt.getFullYear();
     var month = getDt.getMonth() + 1;
     var date = getDt.getDate();

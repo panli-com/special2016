@@ -1,7 +1,23 @@
 {   
-    "start":"0928",
+    "start":"0928H5",
+    "0928H5": {
+        "id":"484",
+        "title": "双十 -Panli代购",
+        "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+        "description":"双十！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+        "version":"0.0.3",
+        "author":"Julian",
+        "load": {
+            "css": ["./0928H5/src/scss/main.scss"],
+            "js": ["./libs/js/D.js","./libs/js/view-rem720.js","./0928H5/src/js/*.js"]
+        },
+        "build":{
+            "css":"485.css",
+            "js":"app.js"
+        }
+    },
     "0928": {
-        "id":"478",
+        "id":"484",
         "title": "双十 -Panli代购",
         "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
         "description":"双十！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
@@ -12,7 +28,7 @@
             "js": ["./0928/src/js/*.js"]
         },
         "build":{
-            "css":"478.css",
+            "css":"484.css",
             "js":"app.js"
         }
     },

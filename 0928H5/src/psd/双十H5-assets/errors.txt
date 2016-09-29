@@ -1,1 +1,1 @@
-[Thu Sep 29 2016 09:53:09 GMT+0800 (中国标准时间)] layer "素材中国 sccnn.com 044": Expected end of input but "0" found.
+[Thu Sep 29 2016 15:06:06 GMT+0800 (中国标准时间)] layer "素材中国 sccnn.com 044": Expected end of input but "0" found.

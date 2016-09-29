@@ -22,7 +22,7 @@
 }
 
 .bgcolor {
-    background: #008de2;
+    background-color:  #332358;
 }
 
 .bgc2 {
@@ -50,4 +50,9 @@
 }
 *:focus {
     outline: none;
+}
+.app{
+    min-height: 4500px;
+    background: #332358 url(./imgs/app-bg.png) no-repeat center top; 
+    background-size: 720px 4262px;
 }

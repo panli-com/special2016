@@ -1,31 +1,64 @@
+var appConfig = {
+    time: function() {
+        if (!Date.now) {
+            Date.now = function now() {
+                return new Date().getTime();
+            };
+        }
+
+        return Date.now();
+    },
+    init: function() {
+        var vm = this;
+        var obj = indexNavNodeInfo;
+
+        var getDt = new Date(Number(vm.time()));
+        var year = getDt.getFullYear();
+        var month = getDt.getMonth() + 1;
+        var date = getDt.getDate();
+        var gst = year + '-' + month + '-' + date;
+ 
+        if (obj[gst]) {
+            var ele = obj[gst];
+            PD(".floor" + ele).find(".cloud-small").addClass("onl-buzz");
+        } 
+    }
+}
+
+
 PD(function() {
 
-    FastClick.attach(document.body);
-
-    function loadImage(url, callback) {
-        var img = new Image();
-        img.src = url;
-
-        img.onload = function() { //图片下载完毕时异步调用callback函数。
-            callback.call(img); // 将callback函数this指针切换为img。
-        };
-    };
+appConfig.init();
 
 
-    loadImage(PD("#img1").attr("src"),function(e){
-        console.log(this);
-    });
+PD(".shop-box .shop-child").on("click",function(e) {
 
-    PD(".content-wrap").on("click", ".nav-a", function() {
-        var _t = PD(this);
-        var _p = _t.parent(".content-wrap");
-       
-        if (_t.attr("data-id") == "2") {
-            _p.addClass("on2");
-        } else {
-            _p.removeClass("on2");
-        }
-    });
+    PD(".ripple").remove();
+
+    var posX = PD(this).offset().left,
+        posY = PD(this).offset().top,
+        buttonWidth = PD(this).width(),
+        buttonHeight = PD(this).height();
+    PD(this).append("<span class='ripple'></span>");
+
+    if (buttonWidth >= buttonHeight) {
+        buttonHeight = buttonWidth;
+    } else {
+        buttonWidth = buttonHeight;
+    }
+
+    var x = e.pageX - posX - buttonWidth / 2;
+    var y = e.pageY - posY - buttonHeight / 2;
+
+    PD(".ripple").css({
+        width: buttonWidth,
+        height: buttonHeight,
+        top: y + 'px',
+        left: x + 'px'
+    }).addClass("rippleEffect");
+
+});
+
 
 
 })

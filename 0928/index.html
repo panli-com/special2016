@@ -18,11 +18,13 @@
     <script type="text/javascript" src="http://sf.panli.com/Ued/Pc/index/build/js/head_2016.js"></script>
     <link rel="stylesheet" href="http://sf.panli.com/Ued/pc/Tools/online/css/online.css?v20160729" />
     <link href="http://sf.panli.com/FrontEnd/css20090801/enroll.css?v=1.2" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet " href="./build/css/478.css ">
+    <link rel="stylesheet " href="./build/css/484.css ">
     <script type="text/javascript">
         var textDateTime = new Date();
+        var stN = textDateTime.getTime().toString();
+        var newN = stN.substring(0,stN.length-3);
         var PanLiNodeInfo = {
-            time: textDateTime.getTime()
+            time: newN
         };
     </script>
 </head>
