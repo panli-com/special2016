@@ -1,0 +1,90 @@
+.floor {
+    // padding: 30px 0;
+    position: relative; 
+    .top-on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 15px;
+        background-color: #000;
+        z-index: 10;
+        .sidebar{
+            position: absolute;
+            width: 38px;
+            height: 18px;
+            background: url(imgs/sidebar.png) no-repeat center top;
+            background-size: 100% 100%;
+            top: 15px;
+            margin-left: -19px; 
+        }
+    }
+    .cop{
+        text-align: right;
+        color: #210a39;
+        padding: 17px 30px;
+        font-size: 22px;
+    }
+}
+
+.floor-tab{
+    padding: 55px 0;
+    display: none;
+    z-index: 0;
+}
+.floor-1{
+    background-color: #631eac;
+    .title-1{
+        height: 56px;
+        margin-bottom: 20px;
+        background: url(imgs/title-1-1.png) no-repeat center top;
+        background-size: 366px 56px;
+    }
+    .tab-1{
+        height: 447px;
+        background: url(imgs/tab-1-1.png) no-repeat center top;
+        background-size: 660px 447px;
+        margin-bottom: 30px;
+    }
+    .title-2{
+        height: 56px;
+        background: url(imgs/title-1-2.png) no-repeat center top; 
+        background-size: 414px 56px;
+        margin-bottom: 20px;
+    }
+    .tab-2{
+        height: 222px;
+        background: url(imgs/tab-1-2.png) no-repeat center top;
+        background-size: 660px 222px;
+    }
+}
+
+.floor-2{
+    background-color: #d91a50;
+    .title-1{
+        height: 110px;
+        background: url(imgs/title-2-1.png) no-repeat center top;
+        background-size: 506px 110px;
+        margin-bottom: 20px;
+    }
+    .tab-1{
+        height: 657px;
+        background: url(imgs/tab-2-1.png) no-repeat center top;
+        background-size: 660px 657px;
+    }
+}
+
+.floor-3{
+    background-color: #631eac;
+    .title-1{
+        height: 113px;
+        background: url(imgs/title-3-1.png) no-repeat center top;
+        background-size: 455px 113px;
+        margin-bottom: 20px;
+    }
+    .tab-1{
+        height: 302px;
+        background: url(imgs/tab-3-1.png) no-repeat center top;
+        background-size: 660px 302px;
+    }
+}

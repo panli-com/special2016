@@ -1,5 +1,21 @@
 {   
-    "start":"0928H5",
+    "start":"1031H5",
+    "1031H5": {
+        "id":"491",
+        "title": "双11全球狂欢",
+        "keywords":"Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+        "description":"双十一！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+        "version":"0.0.3",
+        "author":"Julian",
+        "load": {
+            "css": ["./1031H5/src/scss/main.scss"],
+            "js": ["./libs/js/D.js","./libs/js/view-rem720.js","./libs/js/fastclick.js","./libs/js/rippleria.js","./1031H5/src/js/*.js"]
+        },
+        "build":{
+            "css":"491.css",
+            "js":"app.js"
+        }
+    },
     "0928H5": {
         "id":"487",
         "title": "双十 -Panli代购",
