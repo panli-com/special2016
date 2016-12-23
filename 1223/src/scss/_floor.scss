@@ -1,0 +1,97 @@
+.time-top{
+    text-align: center;
+    position: relative;
+    a{
+        position: absolute;
+        display: inline-block;
+        width: 250px;
+        height: 60px;
+        right: 40px;
+        top: 20px;
+        background-color: transparent; 
+    }
+}
+
+
+.floor{
+    position: relative;
+    .txt-r{
+         text-align: right;
+    }
+    .txt-c{
+         text-align: center;
+    }
+    .title{
+        height: 80px;
+        position: relative;
+    }
+    .more{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -20px;
+        display: inline-block;
+        width: 180px;
+        height: 40px;
+        // background-color: rosybrown;
+    }
+    .floor-body{
+        padding: 20px 0; 
+    }
+}
+.floor-1{
+    .title{
+        background: url(./imgs/floor-title-1.png) no-repeat right center;
+    } 
+}
+.floor-2{
+    .title{
+        background: url(./imgs/floor-title-2.png) no-repeat right center;
+    }
+}
+.floor-3{
+    .title{
+        background: url(./imgs/floor-title-3.png) no-repeat center center;
+    }
+}
+
+
+.floor-list{
+    
+    margin-left: -5px;
+    margin-right: -5px;
+    ul{
+        clear: both;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+        margin: 5px;
+    }
+}
+.layui-layer-shade{
+    opacity: .8!important; 
+    filter: alpha(opacity=80)!important;
+}
+.layer-html-1-main{
+    position: relative;
+    overflow: hidden;
+    .online-url-sp{
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        top: 302px;
+        left: 644px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+.close-layer{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    right: 128px;
+    cursor: pointer;
+    top: 0;
+}
