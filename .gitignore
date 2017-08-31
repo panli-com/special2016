@@ -18,3 +18,5 @@ static
 .tmp
 
 npm-debug.log
+
+*.zip
